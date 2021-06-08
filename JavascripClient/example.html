@@ -1,0 +1,9 @@
+<div id="test"></div>
+<script src="./GenPushSDK.js"></script>
+<script>
+    var GenSDK =new GenPushSDK('xkejhkakjgags','http://localhost',3000);
+    GenSDK.on((data)=>{
+        document.getElementById('test').innerHTML = data.data.receiver;
+    });
+
+</script>
